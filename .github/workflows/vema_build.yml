@@ -35,7 +35,7 @@ jobs:
           tags: vema/sftp:alpine
           pull: true
           push: true
-          file: {context}/Dockerfile-alpine
+          file: Dockerfile-alpine
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new,mode=max
       -
